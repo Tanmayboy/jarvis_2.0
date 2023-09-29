@@ -16,6 +16,6 @@ def base():
 def timewe():
   curr_clock = datetime.datetime.now()
   N = User
-  return render_template("time.html" , N=N , T=curr_clock)
+  return curr_clock , "<button href='/'> Back </button>"
 
 app.run(host='0.0.0.0', port=81)
