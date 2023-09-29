@@ -2,11 +2,12 @@ from flask import Flask , render_template
 import datetime
 app = Flask(__name__)
 User = ["Tanmay"]
+SN = ["Sir"]
 @app.route('/')
 def index():
   N = User
-  sn = secUser
-  return render_template("index.html" , N=N)
+  sn = SN
+  return render_template("index.html" , N=N , sn=sn)
 @app.route('/base')
 def base():
   return render_template("base.html")
